@@ -1,0 +1,78 @@
+/* Sidebar Styling */
+#sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0px; /* Start off-screen */
+    height: 100vh;
+    background: #fff; /* Light background */
+    color: #333; /* Dark text */
+    transition: left 0.3s;
+    z-index: 1000; /* High enough to be above other content */
+}
+
+/* Hamburger Menu Icon */
+#hamburger-menu {
+    font-size: 24px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above the sidebar */
+    color: #333; /* Dark icon color */
+}
+
+#sidebar.active #hamburger-menu {
+    display: block; /* Show only when sidebar is active */
+}
+
+#sidebar.active {
+    left: 0; /* Show sidebar when active */
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 40px; /* Add some top padding */
+}  
+
+/* Adjust container when sidebar is active */
+#sidebar.active + .container {
+    margin-left: 200px; /* Shift content to the right */
+}
+
+#sidebar ul li {
+    margin: 0;
+    display: block;
+}
+
+#sidebar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px; /* Adjust padding */
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    font-size: 14px; /* Adjust font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#sidebar ul li a:hover {
+    background-color: #f3f3f3; /* Light grey background on hover */
+}
+
+#sidebar ul li a .fas {
+    margin-right: 15px; /* Space between icon and text */
+    width: 20px; /* Fixed width for alignment */
+    text-align: center; /* Center icon */
+}
+
+#sidebar ul li a.active, 
+#sidebar ul li a.active-exact {
+    background-color: #007bff; /* Blue background for active item */
+    color: #fff; /* White text for active item */
+}
+
+#sidebar ul li a .nav-text {
+    display: inline;
+}

@@ -1,0 +1,21 @@
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Adjusted padding for better proportion */
+    border-radius: 4px; /* More subtle border-radius */
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s; /* Smoother transition */
+    font-weight: 400; /* Consistent font-weight */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02); /* Subtle scale */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

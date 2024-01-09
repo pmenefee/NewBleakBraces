@@ -1,0 +1,25 @@
+.pg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; /* Changed to bottom border for cleaner look */
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+.pg-header-section {
+    display: flex;
+    align-items: center;
+}
+
+.pg-header-title {
+    margin-right: 20px;
+}
+
+.pg-page-title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 400; /* Consistent font-weight */
+}

@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  #sidebar {
+      width: 50px;
+  }
+
+  #sidebar ul {
+      margin-top: 50px; /* Adjust for smaller sidebar */
+  }
+
+  #sidebar.active + .container {
+      margin-left: 50px; /* Adjust margin for smaller sidebar */
+  }
+
+  #sidebar ul li a .nav-text {
+      display: none;
+  }
+
+  #hamburger-menu {
+      top: 10px;
+      left: 10px;
+  }
+
+  .container {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+
+  form, .button-container {
+      width: 100%; /* Full width for form and buttons */
+  }
+}
+
+@media (max-width: 600px) {
+  input

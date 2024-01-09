@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Upload</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="static/style/bundle.css" />
+  </head>
+  <body>
+    <div id="sidebar-placeholder"></div>
+    <div class="container">
+      <div class="pg-header">
+        <div class="pg-header-section pg-header-title">
+          <h4 class="pg-page-title">Upload Content</h4>
+        </div>
+      </div>
+
+      <form
+        id="upload-form"
+        action="/upload"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="file" accept=".html,.txt" />
+        <button type="submit">Upload and Process File</button>
+      </form>
+      <button id="download-csv-button">Download CSV</button>
+      <div class="loader" id="loader" style="display: none"></div>
+    </div>
+    <script src="static/js/menu.js"></script>
+    <script src="static/js/upload.js"></script>
+    <script src="static/js/google_oauth.js"></script>
+    }</script>
+  </body>
+</html>

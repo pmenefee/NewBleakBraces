@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style/bundle.css">
+    <title>Query Page</title>
+</head>
+<body>
+    <div id="sidebar-placeholder"></div>
+    <div class="container">
+        <div class="pg-header">
+            <div class="pg-header-section pg-header-title">
+                <h4 class="pg-page-title">Query Page</h4>
+            </div>
+        </div>
+        <!-- Loader is added here, similar to the one in upload.html -->
+        <div class="loader" id="loader" style="display: none;"></div>
+        <form id="query-form">
+            <input type="text" id="query-input" placeholder="Enter your query" required>
+            <button type="submit">Search</button>
+        </form>
+      <div id="sub-topics-container"></div>
+    </div>
+    <script src="static/js/menu.js"></script>
+    <script src="static/js/query.js"></script>
+    <script src="static/js/google_oauth.js"></script>
+    <!-- Additional scripts can be added here -->
+</body>
+</html>
